@@ -1,15 +1,15 @@
-# import = [
-#   "./themes/tokyo-night.toml",
-#   "./keybinds.toml",
-# ]
+import = [
+  "./themes/tokyo-night.toml",
+  "./keybinds.toml",
+]
 
 working_directory = "None"
 
 live_config_reload =  false
 
-# [shell]
-# program = ""
-# args = [""]
+[shell]
+program = "/usr/bin/zsh"
+args = ['--login -c "tmux new -A -s home"']
 
 [env]
 
@@ -18,9 +18,10 @@ live_config_reload =  false
 # dimensions = { columns = , lines = }
 position = { x = 960, y = 0}
 padding = { x = 10, y = 30}
-# dynamic_padding = { x = , y =}
+# dynamic_padding = true | false
 decorations = "None"
 opacity = 0.95
+# blur = true | false
 startup_mode = "Windowed"
 # title = ""
 # dynamic_title =
